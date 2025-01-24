@@ -1,0 +1,89 @@
+html{
+    background-color: #0b0226;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* <weight>: Use a value from 300 to 700 */
+header, p, main, footer{
+    color: white;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#home-name{
+    font-size: 40px;
+    color: #beb4fb;
+    font-weight: bold;
+}
+
+
+#home-job-title{
+    color: #9287d6;
+    font-weight: normal;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+#selfie{
+    width: 30%;
+    height: auto;
+    border-radius: 50% 0% 50% 0%;
+}
+
+hr{
+    border: 0; 
+    height: 1px; 
+    background-color: #52528c; 
+    margin: 20px 0; /* Add spacing around the divider */
+}
+
+#small-divider{
+    border: 0; 
+    height: 3px; 
+    width: 30px;
+    background-color: #52528c; 
+    margin: 0 35px;
+}
+
+#about-me > div{
+    display: flex;
+    justify-content: space-around;
+}
+
+#about-me-text{
+    background-color: brown;
+    width: 50%;
+}
+
+#about-me-picture{
+    width: 20%;
+    height: auto;
+    border-radius: 30%;
+}
+
+#pics{
+    display: flex;
+}
+
+#snow-rand1{
+    display: flex;
+    flex-direction: column;
+}
+
