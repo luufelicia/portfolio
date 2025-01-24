@@ -3,6 +3,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
 }
 
 /* <weight>: Use a value from 300 to 700 */
@@ -53,12 +54,12 @@ header, p, main, footer, a{
     justify-content: center;
     align-items: center;
     gap: 10%;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 5%;
 }
 
 #selfie{
-    width: 30%;
+    width: 20%;
     height: auto;
     border-radius: 50% 0% 50% 0%;
 }
@@ -84,20 +85,21 @@ hr{
 #about-me-content{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #about-me-text{
-    padding: 10px;
-    background-color: rgb(16, 2, 55);
+    padding: 20px;
+    background-color: rgb(21, 3, 70);
     width: 50%;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .lang-tags{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%; /* Take up the remaining space */
+    height: 100%; /* Take up remaining space */
 }
 
 .tag-row{
