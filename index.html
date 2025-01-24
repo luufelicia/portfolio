@@ -11,14 +11,14 @@
 </head>
 <body>
     <section id="nav">
-        <p>Home</p>
-        <p>About</p>
-        <p>Skills</p>
+        <a href="#home" class="nav-a">Home</a>
+        <a href="#about-me" class="nav-a">About</a>
+        <p >Skills</p>
         <p>Projects</p>
         <p>Contact</p>
     </section>
     <section id="home">
-        <img src="IMG_Selfie.png" id="selfie" alt="A beautiful image of Felicia Luu">
+        <img src="img/IMG_Selfie.png" id="selfie" alt="A beautiful image of Felicia Luu">
         <div id="intro-text">
             <header>
                 <p id="home-name">Hi, I'm Felicia Luu.</p>
@@ -28,7 +28,7 @@
             </header>
         </div>
     </section>
-   
+
     <hr>
     
     <main>
@@ -37,23 +37,42 @@
                 <h1>About Me</h1>
                 <hr id="small-divider">
             </header>
-            <div>
+            <div id="about-me-content">
                 <p id="about-me-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
                 </p>
-                <div id="pics">
-                    <div id="snow-rand1">
-                        <img src="relax-snow.png" id="about-me-picture">
-                        <img src="rand1.png" id="about-me-picture">
+                <div class="lang-tags">
+                    <div class="tag-row">
+                        <p class="prog-language">PL/SQL</p>
+                        <p class="prog-language">Java</p>
+                        <p class="prog-language">C#</p>
+                        <p class="prog-language">Python</p>
+                        
+                        
                     </div>
-                    <img src="rand2.png" id="about-me-picture">
+                    <div class="tag-row">
+                        <p class="prog-language">Kotlin</p>
+                        <p class="prog-language">Javascript</p>
+                        <p class="prog-language">MongoDB</p>
+                    </div>
+                    <div class="tag-row">
+                        <p class="prog-language">Express</p>
+                        <p class="prog-language">React</p>
+                        <p class="prog-language">Node</p>
+                        <p class="prog-language">Linux</p>
+                    </div>
                 </div>
-               
             </div>
-            
-
+            <div id="download-cv">
+                <img src="img/white-arrow.webp" id="white-arrow">
+                <a href="cv/Felicia_Luu_CV_FR.pdf" download="Felicia_Luu_CV" id="download-cv-button">
+                    <button class="cv-button" role="button">Download my CV!</button>
+                </a>
+            </div>
         </section>
         
+        <hr>
+
     </main>
     <footer>
         <p>&copy; 2024 My Web Page</p>
