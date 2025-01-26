@@ -22,7 +22,7 @@ header, p, main, footer, a{
 
 .nav-a:hover{
     transform: scale(1.05) rotate(-5deg) ;
-    font-size: 30px;
+    font-size: 20px;
     color:#a58de8
 }
 
