@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box; /* Ensures padding/border doesn't affect the height calculation */
+}
+
+
 html{
     background-color: #0b0226;
     display: flex;
@@ -47,6 +52,18 @@ header, p, main, footer, a{
     justify-content: space-evenly;
 }
 
+
+/* ---- GENERAL ---- */
+#home, #about-me, #skills, #projects, #contact {
+    height: 80vh; 
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* ---- HOME ---- */
 
 #home{
@@ -71,7 +88,16 @@ hr{
     margin: 20px 0; /* Add spacing around the divider */
 }
 
-#small-divider{
+.medium-hr{
+    border: 0; 
+    height: 1px; 
+    width: 70%;
+    background-color: #52528c; 
+    margin: 20px 0; /* Add spacing around the divider */
+}
+
+
+.small-divider{
     border: 0; 
     height: 3px; 
     width: 40px;
@@ -90,7 +116,7 @@ hr{
 
 #about-me-text{
     padding: 20px;
-    background-color: rgb(21, 3, 70);
+    background-color: rgb(33, 19, 71);
     width: 50%;
     border-radius: 15px;
 }
@@ -157,7 +183,6 @@ hr{
 
 #skills-content{
     display: flex;
-
 }
 
 .checkmark{
@@ -172,3 +197,107 @@ hr{
     display: flex;
     align-items: center;
 }
+
+
+/* ---- PROJECTS ---- */
+#projects{
+    height: 100%;
+}
+
+#project-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#project-list{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project{
+    display: flex;
+    margin: 40px 0;
+    
+}
+
+.project-img{
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+
+/* ---- CONTACT ---- */
+
+
+#contact{
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+#contact-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-container{
+    height: 100%;
+    width: 100%;
+}
+
+#contact-me-text{
+    font-size: 40px;
+}
+
+#contact-form{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 5px;
+}
+input, textarea{
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+#contact-send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+
+
+/* ---- FOOTER ---- */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p{
+    font-size: 15px;
+}
+
+
