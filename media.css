@@ -1,8 +1,4 @@
 @media (max-width: 768px){
-    html{
-        background-color: black;
-    }
-
     #home, #about-me, #skills, #projects, #contact {
         height: 90vh; 
         overflow: hidden; 
