@@ -50,6 +50,13 @@ header, p, main, footer, a{
 #nav{
     display: flex;
     justify-content: space-evenly;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #0b0226;
+    padding: 15px 0;
+    z-index: 1000;
 }
 
 
@@ -107,24 +114,27 @@ hr{
 
 /* ---- ABOUT ME ---- */
 
+#about-me > div{
+    width: 100%;
+}
 
 #about-me-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 #about-me-text{
     padding: 20px;
+    margin: 30px;
     background-color: rgb(33, 19, 71);
-    width: 50%;
+    width: 500px;
     border-radius: 15px;
 }
 
 .lang-tags{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     height: 100%; /* Take up remaining space */
 }
 
@@ -137,7 +147,7 @@ hr{
 .prog-language{
     padding: 10px;
     margin: 5px;
-    width: 15%;
+    width: 100px;
     background-color: #7c7cc8;
     text-align: center;
     border-radius: 8px;
@@ -202,6 +212,10 @@ hr{
 /* ---- PROJECTS ---- */
 #projects{
     height: 100%;
+}
+
+#projects > div {
+    width: 100%;
 }
 
 #project-content{
